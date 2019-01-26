@@ -26,8 +26,11 @@ namespace C0732134
         public void InitializeMap()
         {
              Alst = new Village();
+            Alst.villageName = "Alst";
             Maeland = new Village();
+            Maeland.villageName = "Maeland";
             Schenig = new Village();
+            Schenig.villageName = "Schenig";
 
 
             Alst.NextVillage = Maeland;
@@ -36,9 +39,12 @@ namespace C0732134
 
         }
 
-        public void WalkAround()
+        public void FindAstrilda()
         {
-            Village InitialVillage = Maeland;
+            Village CurrentVillage = Maeland;
+            if (!CurrentVillage.isAstrlidHere)
+                Console.WriteLine("Yay! Hugi found Astrilda. XOXO");
+            Village NextVillage = CurrentVillage.NextVillage;
         }
 
     }
