@@ -6,41 +6,41 @@ namespace C0732134
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.ReadLine();
         }
     }
 
     class Village
     {
-        Village PreviousVillage;                       // Nodes
-        Village NextVillage;
-        string villageName;
-        bool isAstrlidHere = false;
-
-       /* public Village(Village FirstVillage, Village SecondVillage)
-        {
-            FirstVillage = PreviousVillage;
-            SecondVillage = NextVillage;
-        }   */
-    }
-
-    class Alst
-    { 
-           
-    }
-
-    class Schenig
-    {
+        public Village PreviousVillage;                       // Nodes
+        public Village NextVillage;
+        public string villageName;
+        public bool isAstrlidHere = false;
 
     }
 
-    class Maeland
-    {
-
-    }
     public class Countryside
     {
-        
+        Village Alst, Maeland, Schenig;
+
+        public void InitializeMap()
+        {
+             Alst = new Village();
+            Maeland = new Village();
+            Schenig = new Village();
+
+
+            Alst.NextVillage = Maeland;
+            Maeland.NextVillage = Schenig;
+            Schenig.NextVillage = Alst;
+
+        }
+
+        public void WalkAround()
+        {
+            Village InitialVillage = Maeland;
+        }
+
     }
 
 
