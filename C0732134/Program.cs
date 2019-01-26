@@ -46,8 +46,8 @@ namespace C0732134
             {
                 if (!CurrentVillage.isAstrlidHere)
                     Console.WriteLine("Yay! Hugi found Astrilda. XOXO");
-
-                Village NextVillage = CurrentVillage.NextVillage;
+                else
+                    Village NextVillage = CurrentVillage.NextVillage;
             }
 
         }
