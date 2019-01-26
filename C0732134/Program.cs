@@ -25,8 +25,8 @@ namespace C0732134
     }
 
     class Alst
-    {
-
+    { 
+           
     }
 
     class Schenig
