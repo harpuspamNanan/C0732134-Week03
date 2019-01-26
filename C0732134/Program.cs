@@ -9,4 +9,10 @@ namespace C0732134
             Console.WriteLine("Hello World!");
         }
     }
+
+    class Node
+    {
+        Node PreviousNode;
+        Node NextNode;
+    }
 }
