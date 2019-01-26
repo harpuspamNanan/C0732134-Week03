@@ -42,9 +42,14 @@ namespace C0732134
         public void FindAstrilda()
         {
             Village CurrentVillage = Maeland;
-            if (!CurrentVillage.isAstrlidHere)
-                Console.WriteLine("Yay! Hugi found Astrilda. XOXO");
-            Village NextVillage = CurrentVillage.NextVillage;
+            while (CurrentVillage.isAstrlidHere)
+            {
+                if (!CurrentVillage.isAstrlidHere)
+                    Console.WriteLine("Yay! Hugi found Astrilda. XOXO");
+
+                Village NextVillage = CurrentVillage.NextVillage;
+            }
+
         }
 
     }
