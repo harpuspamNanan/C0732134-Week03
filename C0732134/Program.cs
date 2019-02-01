@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace C0732134
+namespace C0732134_Week04
 {
     class Program
     {
@@ -24,9 +24,10 @@ namespace C0732134
         Village Alst, Maeland, Schenig;
 
         public void InitializeMap()
-        {
+        {  
              Alst = new Village();
             Alst.villageName = "Alst";
+
             Maeland = new Village();
             Maeland.villageName = "Maeland";
             Schenig = new Village();
